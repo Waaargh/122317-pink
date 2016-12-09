@@ -3,22 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/75x22" alt=""></a>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22">
+        </div>
+        <button class="main-nav__toggle" type="button"></button>
       </div>
       <nav class="main-nav">
-          <button class="main-nav__toggle"></button>
-          <div class="main-nav__wrapper">
-              <ul class="main-nav__items">
-                  <li class="main-nav__item"><a href="index.html">Главная</a></li>
-                  <li class="main-nav__item main-nav__item--active"><a href="">Фотографии</a></li>
-                  <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-                  <li class="main-nav__item"><a href="">Html Academy</a></li>
-              </ul>
-          </div>
+        <ul class="main-nav__items">
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="">Html Academy</a></li>
+        </ul>
       </nav>
     </header>
     <section class="photo-introduction">
@@ -29,93 +31,106 @@
     <section class="gallery">
       <div class="gallery__wrapper">
         <header class="gallery__header">
-          <p class="gallery__header-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="gallery__header-text">Взгляните на фотографии, которые выкладывают пользователи!</p>
+          <p class="gallery__header-text"> Видите, как не хватает ваших?</p>
         </header>
         <div class="post">
-          <img src="http://placehold.it/320x137" alt="">
-          <p class="post__author-name">Анна</p>
-          <time datetime="">(5 минут назад)</time>
-          <p class="post__author-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <a href="" class="post__likes">Нравится: 215</a>
+          <img src="../img/panorama-mobile@1x.jpg" alt="Photo" width="320" height="137">
+          <div class="post__text-area">
+            <p class="post__author-name"><span class="post__author-name--bold">Анна</span> <time datetime="">(5 минут назад)</time></p>
+            <p class="post__author-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <a href="" class="post__likes">Нравится: 215</a>
+          </div>
         </div>
         <div class="post">
-          <img src="http://placehold.it/320x137" alt="">
-          <p class="post__author-name">Левон</p>
-          <time datetime="">(5 часов назад)</time>
-          <p class="post__author-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <a href="" class="post__likes">Нравится: 356</a>
+          <img src="../img/photo-1-mobile@1x.jpg" alt="Photo" width="320" height="137">
+          <div class="post__text-area">
+            <p class="post__author-name"><span class="post__author-name--bold">Левон</span> <time datetime="">(5 часов назад)</time></p>
+            <p class="post__author-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a href="" class="post__likes">Нравится: 356</a>
+          </div>
         </div>
         <div class="post">
-          <img src="http://placehold.it/320x137" alt="">
-          <p class="post__author-name">Антон</p>
-          <time datetime="">(12 часов назад)</time>
-          <p class="post__author-text">Соседи будут рады!</p>
-          <a href="" class="post__likes">Нравится: 666</a>
+          <img src="../img/photo-2-mobile@1x.jpg" alt="Photo" width="320" height="137">
+          <div class="post__text-area">
+            <p class="post__author-name"><span class="post__author-name--bold">Антон</span> <time datetime="">(12 часов назад)</time></p>
+            <p class="post__author-text">Соседи будут рады!</p>
+            <a href="" class="post__likes">Нравится: 666</a>
+          </div>
         </div>
         <div class="post">
-          <img src="http://placehold.it/320x137" alt="">
-          <p class="post__author-name">Борис</p>
-          <time datetime="">(20 часов назад)</time>
-          <p class="post__author-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <a href="" class="post__likes">Нравится: 215</a>
+          <img src="../img/photo-3-mobile@1x.jpg" alt="Photo" width="320" height="137">
+          <div class="post__text-area">
+            <p class="post__author-name"><span class="post__author-name--bold">Борис</span> <time datetime="">(20 часов назад)</time></p>
+            <p class="post__author-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a href="" class="post__likes">Нравится: 215</a>
+          </div>
         </div>
         <div class="post">
-          <img src="http://placehold.it/320x137" alt="">
-          <p class="post__author-name">Сергей</p>
-          <time datetime="">(25 часов назад)</time>
-          <p class="post__author-text">Самая кубанская в мире!</p>
-          <a href="" class="post__likes">Нравится: 4</a>
+          <img src="../img/photo-4-mobile@1x.jpg" alt="Photo" width="320" height="137">
+          <div class="post__text-area">
+            <p class="post__author-name"><span class="post__author-name--bold">Сергей</span> <time datetime="">(25 часов назад)</time></p>
+            <p class="post__author-text">Самая кубанская в мире!</p>
+            <a href="" class="post__likes">Нравится: 4</a>
+          </div>
         </div>
         <div class="post">
-          <img src="http://placehold.it/320x137" alt="">
-          <p class="post__author-name">Максим</p>
-          <time datetime="">(40 часов назад)</time>
-          <p class="post__author-text">Где снег-то?</p>
-          <a href="" class="post__likes">Нравится: 150</a>
+          <img src="../img/photo-5-mobile@1x.jpg" alt="Photo" width="320" height="137">
+          <div class="post__text-area">
+            <p class="post__author-name"><span class="post__author-name--bold">Максим</span> <time datetime="">(40 часов назад)</time></p>
+            <p class="post__author-text">Где снег-то?</p>
+            <a href="" class="post__likes">Нравится: 150</a>
+          </div>
         </div>
         <div class="post">
-          <img src="http://placehold.it/320x137" alt="">
-          <p class="post__author-name">Надежда</p>
-          <time datetime="">(45 часов назад)</time>
-          <p class="post__author-text">Всем GM и взаимные лайки!</p>
-          <a href="" class="post__likes">Нравится: 2560</a>
+          <img src="../img/photo-6-mobile@1x.jpg" alt="Photo" width="320" height="137">
+          <div class="post__text-area">
+            <p class="post__author-name"><span class="post__author-name--bold">Надежда</span> <time datetime="">(45 часов назад)</time></p>
+            <p class="post__author-text">Всем GM и взаимные лайки!</p>
+            <a href="" class="post__likes">Нравится: 2560</a>
+          </div>
         </div>
       </div>
     </section>
-    <section class="upload">
-      <div class="upload__wrapper">
-        <header class="upload__header">
-          <p class="upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+    <section class="editor">
+      <div class="editor__wrapper">
+        <header class="editor__header">
+          <p class="editor__text">Затмите их всех!</p>
+          <p class="editor__text">Выкладывайте все, что накопилось в телефоне!</p>
         </header>
-        <div class="upload__form">
-          <img src="http://placehold.it/280x374" alt="">
-          <div class="upload__tools">
-            <ul class="tools__items">
-              <li class="tools__item"><a class="tools__crop" href=""><img src="http://placehold.it/44x44" alt="crop"></a></li>
-              <li class="tools__item"><a class="tools__fill" href=""><img src="http://placehold.it/44x44" alt="fill"></a></li>
-              <li class="tools__item"><a class="tools__contrast" href=""><img src="http://placehold.it/44x44" alt="contrast"></a></li>
-            </ul>
-            <input type="range" min="1" max="100" step="1">
-          </div>
-          <div class="upload__buttons-group">
-            <a href="" class="btn upload__btn">Запостить</a>
-            <a href="" class="btn upload__btn--inactive">Отмена</a>
+      </div>
+      <div class="editor__background">
+        <div class="editor__wrapper">
+          <div class="editor__form">
+            <img src="../img/photo-7-mobile@1x.jpg" alt="your image" width="280" height="374">
+            <div class="editor__tools-block">
+              <ul class="editor__tools">
+                <li class="editor-tool editor-tool--active"><a class="editor-tool__crop" href=""><img src="../img/icon-editor-crop.svg" alt="crop" height="44" width="44"></a></li>
+                <li class="editor-tool editor-tool--inactive"><a class="editor-tool__fill" href=""><img src="../img/icon-editor-fill.svg" alt="fill" height="44" width="44"></a></li>
+                <li class="editor-tool editor-tool--inactive"><a class="editor-tool__contrast" href=""><img src="../img/icon-editor-contrast.svg" alt="contrast" height="40" width="40"></a></li>
+              </ul>
+              <input class="editor-tool__range" type="range" min="1" max="100" step="1">
+            </div>
+            <div class="editor__buttons-group">
+              <a href="" class="btn editor__btn">Запостить</a>
+              <a href="" class="btn editor__btn--inactive">Отмена</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <footer class="page-footer">
-      <div class="footer__wrapper">
+      <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <a href="index.html"><img src="http://placehold.it/147x40" alt="PINK"></a>
+          <a href="index.html"><img src="../img/logo-pink-blue-mobile.svg" alt="PINK" width="147" height="40"></a>
         </div>
         <ul class="page-footer__social-items">
-          <li class="page-footer__social-item"><a href=""><img src="http://placehold.it/20x15" alt="twitter"></a></li>
-          <li class="page-footer__social-item"><a href=""><img src="http://placehold.it/20x15" alt="facebook"></a></li>
-          <li class="page-footer__social-item"><a href=""><img src="http://placehold.it/20x15" alt="youtube"></a></li>
+          <li class="page-footer__social-item"><a class="page-footer__social-link" href=""><img class="page-footer__social-image" src="../img/icon-twitter.svg" alt="twitter" width="20" height="15"></a></li>
+          <li class="page-footer__social-item"><a class="page-footer__social-link" href=""><img class="page-footer__social-image" src="../img/icon-facebook.svg" alt="facebook" width="20" height="15"></a></li>
+          <li class="page-footer__social-item"><a class="page-footer__social-link" href=""><img class="page-footer__social-image" src="../img/icon-youtube.svg" alt="youtube" width="20" height="15"></a></li>
         </ul>
         <p class="page-footer__copyright">
-          Разработано <a href=""><img src="http://placehold.it/27x34" alt="Html Academy"></a>
+          Разработано <a href=""><img src="../img/htmlacademy.svg" alt="Html Academy" height="27" width="34"></a>
         </p>
       </div>
     </footer>
