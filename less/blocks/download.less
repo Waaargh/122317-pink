@@ -1,9 +1,5 @@
 .download {
-  margin-bottom: 30px;
-  padding-top: 105px;
-  padding-bottom: 35px;
-
-  color: #fff;
+  color: @white;
   background-color: @bg-darkblue;
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
@@ -31,36 +27,86 @@
   border-radius: 25px;
 }
 
-.download__wrapper {
-  .wrapper();
-}
-
 .download__infoblock {
   padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
 
   text-align: center;
 
   background: @bg-darkblue;
 }
 
+.download__title {
+  display: none;
+}
+
 .download__items {
+  display: flex;
+
   margin-bottom: 20px;
 
+  align-items: center;
+  justify-content: space-around;
   .list-reset;
 }
 
-.download__item {
-  display: inline-block;
+@media @tablet-widths {
+  .download {
+    background-color: @bg-darkblue;
+    background-image: url('../img/bg-back-mobile@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .download__wrapper {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+    .wrapper();
+  }
+
+  .download__infoblock {
+    width: 300px;
+    height: 520px;
+
+    background: none;
+  }
+
+  .download__title {
+    font-size: 50px;
+    font-weight: normal;
+
+    display: inline;
+
+    .h2;
+  }
+
+  .download__img {
+    display: block;
+
+    margin-left: 0px;
+
+    text-align: center;
+
+    order: 2;
+  }
+
+  .download__link {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .download__items {
+    margin-bottom: 60px;
+  }
 }
 
-.download__platform-img {
-  margin-top: 30px;
-}
-
-.download__platform-img:first-child {
-  margin-right: 20px;
-}
-
-.download__platform-img:last-child {
-  margin-left: 20px;
+@media @desktop-widths {
+  .download {
+    padding-top: 105px;
+  }
 }

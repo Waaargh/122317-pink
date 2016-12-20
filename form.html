@@ -13,15 +13,15 @@
           <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22">
         </div>
         <button class="main-nav__toggle" type="button"></button>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="">Html Academy</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="">Html Academy</a></li>
-        </ul>
-      </nav>
     </header>
     <div class="contest-introduction">
       <div class="contest-introduction__wrapper">
@@ -29,25 +29,25 @@
       </div>
     </div>
     <div class="share">
-      <p class="share__info-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-      <form class="form" action="" method="post">
-        <div class="share__wrapper">
-          <div class="form__group">
-            <label class="form__label" for="surname-field">Фамилия:</label>
-            <input class="form__input" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию *">
+      <div class="share__wrapper">
+        <p class="share__info-text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="share__info-text--mobile-hidden">Пожалуйста, заполните форму ниже:</span></p>
+        <form class="form" action="" method="post">
+          <div class="form__section form__section--fullname">
+            <div class="form__group">
+              <label class="form__label" for="surname-field">Фамилия:</label>
+              <input class="form__input" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="name-field">Имя:</label>
+              <input class="form__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя *">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="middle-name-field">Отчество:</label>
+              <input class="form__input" type="text" name="middle-name" id="middle-name-field" placeholder="Ну и отчество тоже">
+            </div>
           </div>
-          <div class="form__group">
-            <label class="form__label" for="name-field">Имя:</label>
-            <input class="form__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя *">
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="middle-name-field">Отчество:</label>
-            <input class="form__input" type="text" name="middle-name" id="middle-name-field" placeholder="Ну и отчество тоже">
-          </div>
-        </div>
-        <div class="checkbox-list">
-          <div class="checkbox">
-            <div class="checkbox__wrapper">
+          <div class="checkbox-list">
+            <div class="checkbox">
               <p class="checkbox__title">Ваши безбашенные достижения в путешествии</p>
               <ul class="checkbox__items">
                 <li class="checkbox__item">
@@ -63,6 +63,10 @@
                   <label class="checkbox__label" for="chuck">Видел Чака Норриса</label>
                 </li>
                 <li class="checkbox__item">
+                  <input class="checkbox__input" id="gift" type="checkbox">
+                  <label class="checkbox__label" for="gift">Накупил сувениров</label>
+                </li>
+                <li class="checkbox__item">
                   <input class="checkbox__input" id="tower" type="checkbox">
                   <label class="checkbox__label" for="tower">Удержал башню</label>
                 </li>
@@ -73,20 +77,19 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="share__wrapper">
-          <div class="form__group">
-            <label class="form__label" for="phone-field">Номер телефона</label>
-            <input class="form__input" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+          <div class="form__section form__section--contacts">
+            <p class="form__section-title">Контактная информация</p>
+            <div class="form__group">
+              <label class="form__label form__label--order" for="phone-field">Номер телефона</label>
+              <input class="form__input form__input--order" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form__group">
+              <label class="form__label form__label--order" for="email-field">Адресок почты:</label>
+              <input class="form__input form__input--order" type="email" name="email" id="email-field" placeholder="Введите почту *">
+            </div>
           </div>
-          <div class="form__group">
-            <label class="form__label" for="email-field">Адресок почты:</label>
-            <input class="form__input" type="email" name="email" id="email-field" placeholder="Введите почту *">
-          </div>
-        </div>
-        <div class="radio-list">
-          <div class="radio">
-            <div class="radio__wrapper">
+          <div class="radio-list">
+            <div class="radio">
               <p class="radio__title">С каким приложением путешествовали?</p>
               <ul class="radio__items">
                 <li class="radio__item">
@@ -104,18 +107,16 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="feedback">
-          <div class="feedback__wrapper">
+          <div class="feedback">
             <label class="feedback__label" for="feedback-field">Опишите свои эмоции</label>
             <textarea class="feedback__textarea" name="feedback" id="feedback-field" placeholder="Можно прям в красках, не стесняясь в выражениях!"></textarea>
           </div>
-        </div>
-        <div class="share__wrapper">
-          <a class="btn share__btn" href="">Отправить форму</a>
-          <p>* — обязательные поля</p>
-        </div>
-      </form>
+          <div class="share__send">
+            <a class="btn share__btn" href="">Отправить форму</a>
+            <p>* — обязательные поля</p>
+          </div>
+        </form>
+      </div>
     </div>
     <footer class="page-footer">
       <div class="page-footer__wrapper">

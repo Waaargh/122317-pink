@@ -5,19 +5,31 @@
 }
 
 .page-header__wrapper {
-  .clearfix();
-  .wrapper();
+  position: relative;
 }
 
 .page-header__logo {
-  float: left;
-
   max-width: 150px;
-  margin-bottom: 25px;
-
-  .wrapper();
 }
 
-.main-nav__toggle {
-  float: right;
+@media @desktop-widths {
+  .page-header__wrapper {
+    .wrapper();
+  }
+  .page-header {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    opacity: 0.9;
+  }
+  .page-header__wrapper {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+  }
 }

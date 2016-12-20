@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+.share__info-text--mobile-hidden {
+  display: none;
+}
+
 .share__btn {
   width: 280px;
 
@@ -22,6 +26,26 @@
 }
 
 @media @tablet-widths {
+  .share__info-text {
+    font-size: 18px;
+
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .share__info-text--mobile-hidden {
+    display: inline;
+  }
+
+  .share__send {
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+    order: 6;
+  }
+
   .share__btn {
     width: 300px;
   }
@@ -30,5 +54,27 @@
 @media @desktop-widths {
   .share__btn {
     width: 300px;
+  }
+
+  .share__info-text {
+    font-size: 18px;
+
+    width: 90%;
+    margin-bottom: 60px;
+
+    text-align: center;
+  }
+
+  .share__info-text--mobile-hidden {
+    display: inline;
+  }
+
+  .share__send {
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+    order: 6;
   }
 }

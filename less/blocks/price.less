@@ -8,13 +8,10 @@
   .wrapper();
 }
 
-.price__item:last-child {
+.price__items {
   display: none;
 }
 
-.price__item:first-child {
-  display: none;
-}
 
 .price__item-main-cell {
   text-align: center;
@@ -24,6 +21,14 @@
 
 .price__item {
   width: 100%;
+}
+
+.price__items--mobile .price__item:first-child {
+  display: none;
+}
+
+.price__items--mobile .price__item:last-child {
+  display: none;
 }
 
 .price__item-main-cell {
@@ -38,7 +43,13 @@
 .price__item-name {
   font-weight: bold;
 
+  text-align: center;
+
   .h2;
+}
+
+.price__item-value {
+  text-align: center;
 }
 
 .price__item-feature {
@@ -51,4 +62,106 @@
 
 .price__toggle {
   text-align: center;
+}
+
+@media @tablet-widths {
+  .price {
+    padding-top: 40px;
+  }
+
+  .price__items--mobile {
+    display: none;
+  }
+
+  .price__items {
+    display: block;
+  }
+
+  .price__item {
+    background-color: @white;
+  }
+
+  .price__item th:first-child {
+    background-color: @bg-gray;
+  }
+
+  .price__feature-name {
+    display: block;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+
+    text-transform: none;
+  }
+
+  .price__item-feature {
+    text-transform: none;
+  }
+
+  .price__item-image {
+    width: 25px;
+    height: 25px;
+  }
+
+  .price__feature-cell {
+    width: 230px;
+  }
+
+  .price__cell {
+    text-align: center;
+  }
+
+  .price__toggle {
+    display: none;
+  }
+}
+
+@media @desktop-widths {
+  .price__items--mobile {
+    display: none;
+  }
+
+  .price__items {
+    display: block;
+  }
+
+  .price__item {
+    background-color: @white;
+  }
+
+  .price__item th:first-child {
+    background-color: @bg-gray;
+  }
+
+  .price__feature-name {
+    display: block;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+
+    text-transform: none;
+  }
+
+  .price__item-feature {
+    text-transform: none;
+  }
+
+  .price__item-image {
+    width: 25px;
+    height: 25px;
+  }
+
+  .price__feature-cell {
+    width: 230px;
+  }
+
+  .price__cell {
+    text-align: center;
+  }
+
+  .price__toggle {
+    display: none;
+  }
 }

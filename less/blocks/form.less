@@ -2,8 +2,12 @@
   margin-bottom: 35px;
 }
 
+.form__section-title {
+  display: none;
+}
+
 .form__group {
-  margin-top: 25px;
+  padding-top: 25px;
 }
 
 .form__label {
@@ -21,4 +25,134 @@
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+}
+
+@media @tablet-widths {
+  .form {
+    display: flex;
+
+    padding-top: 25px;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .form__section--fullname {
+    width: 100%;
+    margin-bottom: 60px;
+
+    order: 1;
+  }
+
+  .form__group {
+    display: flex;
+
+    align-items: flex-start;
+  }
+
+  .form__section--fullname .form__label {
+    margin: 0;
+    margin-right: 15px;
+  }
+
+  .form__section--fullname .form__input {
+    flex-grow: 10;
+  }
+
+  .form__section--contacts {
+    margin-bottom: 65px;
+    padding-right: 60px;
+    padding-left: 60px;
+
+    border: 2px solid @bg-gray;
+
+    order: 3;
+  }
+
+  .form__section--contacts .form__group {
+    flex-direction: column;
+  }
+
+  .form__label--order {
+    margin-bottom: 15px;
+
+    order: 2;
+  }
+
+  .form__input--order {
+    width: 500px;
+    margin-bottom: 15px;
+
+    order: 1;
+  }
+
+  .form__section-title {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+
+    width: 260px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: @pink;
+    background-color: @white;
+  }
+}
+
+@media @desktop-widths {
+  .form__section--fullname {
+    width: 45%;
+
+    order: 1;
+  }
+
+  .form__section--contacts {
+    display: flex;
+
+    justify-content: space-around;
+    order: 3;
+  }
+
+  .form__section--fullname .form__group {
+    align-items: center;
+  }
+
+  .form__section--contacts .form__group {
+    flex-direction: column;
+  }
+
+  .form__label--order {
+    margin-bottom: 15px;
+
+    order: 2;
+  }
+
+  .form__input--order {
+    width: 375px;
+    margin-bottom: 15px;
+
+    order: 1;
+  }
+
+  .form__section-title {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+
+    width: 260px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: @pink;
+    background-color: @white;
+  }
 }

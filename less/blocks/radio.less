@@ -21,3 +21,41 @@
 
   list-style: none;
 }
+
+@media @tablet-widths {
+  .radio {
+    position: relative;
+
+    display: flex;
+  }
+
+  .radio__title {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+
+    width: 370px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    text-transform: uppercase;
+
+    background-color: @white;
+  }
+
+  .radio__item {
+    width: 200px;
+    padding: 20px;
+  }
+  .radio__input {
+    margin-right: 20px;
+  }
+}
+
+@media @desktop-widths {
+  .radio {
+    justify-content: center;
+  }
+}

@@ -15,6 +15,84 @@
   margin-bottom: 30px;
 }
 
+.reviews__quotes {
+  display: none;
+}
+
 .reviews__author-name {
   .h2;
+}
+
+@media @tablet-widths {
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .reviews__item {
+    display: flex;
+
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .reviews__quotes {
+    display: none;
+  }
+  .reviews__author-name {
+    order: 2;
+  }
+
+  .reviews__author-info {
+    order: 3;
+  }
+
+  .reviews__author-comment {
+    font-size: 18px;
+
+    margin-bottom: 45px;
+
+    order: 1;
+  }
+
+  .reviews__toggle {
+    display: block;
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+    height: 375px;
+  }
+  .reviews__item {
+    display: flex;
+
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .reviews__quotes {
+    font-size: 200px;
+    line-height: 200px;
+
+    display: inline;
+  }
+  .reviews__author-name {
+    order: 2;
+  }
+
+  .reviews__author-info {
+    order: 3;
+  }
+
+  .reviews__author-comment {
+    font-size: 18px;
+
+    margin-bottom: 45px;
+
+    order: 1;
+  }
+
+  .reviews__toggle {
+    display: none;
+  }
 }
